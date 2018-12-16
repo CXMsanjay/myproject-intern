@@ -1,0 +1,7 @@
+---
+
+- name: This playbook will demonstrate installation of apache server
+  hosts: all
+  tasks:
+     - name: Install apache server
+       yum: name=httpd state=latest                  

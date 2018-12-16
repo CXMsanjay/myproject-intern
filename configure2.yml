@@ -1,0 +1,12 @@
+---
+
+- name: Making website2
+  hosts: web2
+  tasks:
+     - copy:
+        src: /vagrant/web2.conf
+        dest: /etc/httpd/conf.d/web2.conf
+     - copy:
+        src: /vagrant/website2
+        dest: /var/www/html/
+

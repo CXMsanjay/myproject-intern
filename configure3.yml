@@ -1,0 +1,11 @@
+---
+
+- name: Making website3
+  hosts: web3
+  tasks:
+     - copy:
+        src: /vagrant/web3.conf
+        dest: /etc/httpd/conf.d/web3.conf
+     - copy:
+        src: /vagrant/website3
+        dest: /var/www/html/

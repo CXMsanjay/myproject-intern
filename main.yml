@@ -1,0 +1,7 @@
+- include: install.yml
+
+- include: configure1.yml
+#- include: configure2.yml
+#- include: configure3.yml
+
+- include: service.yml
